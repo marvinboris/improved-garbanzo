@@ -65,7 +65,7 @@ export default function ContactForm() {
             <option value="">Selectionnez un service</option>
             <option value="villa">Nettoyage de villa</option>
             <option value="bureau">Nettoyage de bureaux</option>
-            <option value="hotel">Nettoyage dhotel</option>
+            <option value="hotel">Nettoyage d&apos;hotel</option>
             <option value="vitres">Nettoyage de vitres</option>
             <option value="sols">Nettoyage de sols</option>
             <option value="chantier">Nettoyage fin de chantier</option>

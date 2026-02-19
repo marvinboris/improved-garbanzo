@@ -106,7 +106,7 @@ const testimonials = [
   {
     name: 'Fatou L.',
     role: 'Particulière',
-    comment: 'Service excellent pour le nettoyage de ma villa. Produits écologiques, cest exactement ce que je cherchais.',
+    comment: 'Service excellent pour le nettoyage de ma villa. Produits écologiques, c\'est exactement ce que je cherchais.',
     rating: 5,
   },
 ]

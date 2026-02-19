@@ -42,8 +42,8 @@ const services = [
   },
   {
     id: 'hotels',
-    title: 'Nettoyage dHotels',
-    description: 'Nous comprenons les enjeux de propreté dans lhotellerie. Notre service est adapté aux standards élevés du secteur et assure une satisfaction optimale de vos clients.',
+    title: 'Nettoyage d\'Hôtels',
+    description: 'Nous comprenons les enjeux de propreté dans l\'hôtellerie. Notre service est adapté aux standards élevés du secteur et assure une satisfaction optimale de vos clients.',
     features: [
       'Nettoyage des chambres (literie, salles de bains, sols)',
       'Nettoyage des espaces communs',
