@@ -51,7 +51,7 @@ export default function Contact() {
                   </a>
 
                   <a 
-                    href="mailto:cleanenvironnement@gmail.com" 
+                    href="mailto:cleanenvironnement237@gmail.com" 
                     className="flex items-center gap-4 p-4 bg-white rounded-xl hover:shadow-md transition-all group"
                   >
                     <div className="w-12 h-12 bg-eco/10 rounded-lg flex items-center justify-center text-eco group-hover:bg-eco group-hover:text-white transition-all">
@@ -61,7 +61,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">Email</p>
-                      <p className="font-semibold text-gray-900 group-hover:text-eco transition-all">cleanenvironnement@gmail.com</p>
+                      <p className="font-semibold text-gray-900 group-hover:text-eco transition-all">cleanenvironnement237@gmail.com</p>
                     </div>
                   </a>
 
