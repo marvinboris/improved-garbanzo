@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import Button from '@/components/ui/Button'
 
 const navLinks = [
@@ -15,17 +16,20 @@ const navLinks = [
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const pathname = usePathname()
+  const isHome = pathname === '/'
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20)
+      setScrolled(window.scrollY > 20 || !isHome)
     }
     window.addEventListener('scroll', handleScroll)
+    handleScroll()
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  }, [isHome])
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-md' : 'bg-transparent'}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-md' : isHome ? 'bg-transparent' : 'bg-white shadow-md'}`}>
       <div className="container-custom">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-2">
@@ -34,7 +38,7 @@ export default function Navbar() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
               </svg>
             </div>
-            <span className={`text-xl font-bold ${scrolled ? 'text-gray-900' : 'text-white'}`}>
+            <span className={`text-xl font-bold ${scrolled || !isHome ? 'text-gray-900' : 'text-white'}`}>
               Clean Environnement
             </span>
           </Link>
@@ -44,7 +48,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`font-medium transition-colors hover:text-eco ${scrolled ? 'text-gray-700' : 'text-white'}`}
+                className={`font-medium transition-colors hover:text-eco ${scrolled || !isHome ? 'text-gray-700' : 'text-white'}`}
               >
                 {link.name}
               </Link>
@@ -53,12 +57,12 @@ export default function Navbar() {
 
           <div className="hidden md:block">
             <Link href="/contact">
-              <Button variant={scrolled ? 'primary' : 'outline'}>Demander un devis</Button>
+              <Button variant={scrolled || !isHome ? 'primary' : 'outline'}>Demander un devis</Button>
             </Link>
           </div>
 
           <button
-            className={`md:hidden p-2 ${scrolled ? 'text-gray-900' : 'text-white'}`}
+            className={`md:hidden p-2 ${scrolled || !isHome ? 'text-gray-900' : 'text-white'}`}
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Menu"
           >
