@@ -6,7 +6,7 @@ import SectionHeading from '@/components/ui/SectionHeading'
 import Button from '@/components/ui/Button'
 
 export const metadata: Metadata = {
-  title: 'Clean Environnement | Nettoyage Écologique Professionnel au Cameroun',
+  title: 'Clean Environnement | Nettoyage professionnel pour un environnement propre',
   description: 'Entreprise de nettoyage écologique au Cameroun. Nettoyage de villas, bureaux, hôtels et établissements touristiques. Devis gratuit.',
 }
 
@@ -70,7 +70,7 @@ const services = [
 const advantages = [
   {
     title: 'Produits Écologiques',
-    description: 'Nous utilisons uniquement des produits biodégradables, non toxiques et respectueux de lenvironnement.',
+    description: "Nous utilisons uniquement des produits biodégradables, non toxiques et respectueux de l'environnement.",
     icon: '🌿',
   },
   {
@@ -135,7 +135,7 @@ export default function Home() {
             </h1>
             
             <p className="text-xl text-gray-300 mb-8 max-w-2xl">
-              Clean Environnement offre des services de nettoyage professionnels au Cameroun avec des produits 100% écologiques. Qualité, fiabilité et respect de lenvironnement.
+              Clean Environnement offre des services de nettoyage professionnels au Cameroun avec des produits 100% écologiques. Qualité, fiabilité et respect de l&rsquo;environnement.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -219,7 +219,7 @@ export default function Home() {
                 <div className="text-center p-8">
                   <div className="text-6xl mb-4">🧹</div>
                   <p className="text-eco font-bold text-xl">Service de qualité</p>
-                  <p className="text-gray-600">Respect de lenvironnement</p>
+                  <p className="text-gray-600">Respect de l&rsquo;environnement</p>
                 </div>
               </div>
               <div className="absolute -bottom-6 -right-6 bg-eco text-white px-6 py-4 rounded-xl shadow-lg">

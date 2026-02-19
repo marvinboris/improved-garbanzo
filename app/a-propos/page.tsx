@@ -27,12 +27,12 @@ export default function About() {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Une entreprise engagée pour lenvironnement</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Une entreprise engagée pour l&rsquo;environnement</h2>
               <p className="text-gray-600 mb-6 text-lg">
-                Clean Environnement est une entreprise camerounaise de nettoyage professionnel qui privilégie les solutions écologiques. Nous croyons quil est possible dobtenir des résultats exceptionnels tout en respectant notre planète.
+                Clean Environnement est une entreprise camerounaise de nettoyage professionnel qui privilégie les solutions écologiques. Nous croyons qu&rsquo;il est possible d&rsquo;obtenir des résultats exceptionnels tout en respectant notre planète.
               </p>
               <p className="text-gray-600 mb-6">
-                Fondée avec la conviction que le nettoyage de qualité ne doit pas se faire au détriment de lenvironnement, notre entreprise sest donnée pour mission de révolutionner les standards du nettoyage au Cameroun.
+                Fondée avec la conviction que le nettoyage de qualité ne doit pas se faire au détriment de l&rsquo;environnement, notre entreprise s&rsquo;est donnée pour mission de révolutionner les standards du nettoyage au Cameroun.
               </p>
               <Button href="/contact">Travailler avec nous</Button>
             </div>
@@ -59,7 +59,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Notre Mission</h3>
               <p className="text-gray-600">
-                Offrir des services de nettoyage professionnels de haute qualité en utilisant exclusivement des produits écologiques, tout en contribuant à la préservation de lenvironnement camerounais.
+                Offrir des services de nettoyage professionnels de haute qualité en utilisant exclusivement des produits écologiques, tout en contribuant à la préservation de l&rsquo;environnement camerounais.
               </p>
             </div>
 
@@ -98,7 +98,7 @@ export default function About() {
               <div>
                 <h2 className="text-3xl font-bold mb-6">Notre Engagement Ecologique</h2>
                 <p className="text-lg opacity-90 mb-6">
-                  Nous utilisons exclusivement des produits de nettoyage biodégradables, non toxiques et sans danger pour lenvironnement et la santé.
+                  Nous utilisons exclusivement des produits de nettoyage biodégradables, non toxiques et sans danger pour l&rsquo;environnement et la santé.
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-3">

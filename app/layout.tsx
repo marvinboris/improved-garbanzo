@@ -2,14 +2,17 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Clean Environnement | Nettoyage Écologique au Cameroun',
+  title: 'Clean Environnement | Nettoyage professionnel pour un environnement propre',
   description: 'Entreprise de nettoyage professionnelle au Cameroun. Services de nettoyage écologique pour villas, bureaux, hôtels. Devis gratuit.',
   keywords: 'nettoyage, Cameroun, écologique, villa, bureau, hotel',
   openGraph: {
-    title: 'Clean Environnement | Nettoyage Écologique au Cameroun',
+    title: 'Clean Environnement | Nettoyage professionnel pour un environnement propre',
     description: 'Entreprise de nettoyage professionnelle au Cameroun. Services écologiques pour particuliers et entreprises.',
     type: 'website',
     locale: 'fr_CM',
+  },
+  icons: {
+    icon: '/logo.jpg',
   },
 }
 
